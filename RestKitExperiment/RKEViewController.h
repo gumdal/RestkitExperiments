@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Restkit/Restkit.h>
+#import "TheStarFootballClient.h"
+@interface RKEViewController : UIViewController <RKRequestDelegate>
+{
+    TheStarFootballClient *footballClient_;
+}
+@property (nonatomic, retain) TheStarFootballClient *footballClient;
 
-@interface RKEViewController : UIViewController
+- (void)sendRequests;
 
 @end

@@ -9,6 +9,15 @@
 #import "RKEViewController.h"
 
 @implementation RKEViewController
+@synthesize footballClient=footballClient_;
+-(void)setFootballClient:(TheStarFootballClient *)inFootballClient
+{
+    if (inFootballClient!=footballClient_)
+    {
+        [footballClient_ cancelPendingRequestsWithDelegate:self];
+        footballClient_ = inFootballClient;
+    }
+}
 
 - (void)didReceiveMemoryWarning
 {
@@ -39,6 +48,7 @@
 - (void)viewDidAppear:(BOOL)animated
 {
     [super viewDidAppear:animated];
+    [self sendRequests];
 }
 
 - (void)viewWillDisappear:(BOOL)animated
@@ -55,6 +65,18 @@
 {
     // Return YES for supported orientations
     return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
+}
+
+#pragma mark -
+- (void)sendRequests
+{
+    TheStarFootballClient *aFootballClient = [[TheStarFootballClient alloc] init];
+    [aFootballClient sendRequestWithResponseDelegate:self];
+    [self setFootballClient:aFootballClient];
+}  
+
+- (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response
+{  
 }
 
 @end

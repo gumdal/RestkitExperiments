@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F63F294015A17FEA007E1C8B /* RKFootball.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F293F15A17FEA007E1C8B /* RKFootball.m */; };
+		F65C91C2159D8157001019E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65C91C1159D8157001019E0 /* Security.framework */; };
+		F65C91C4159D8194001019E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65C91C3159D8193001019E0 /* QuartzCore.framework */; };
+		F65C91C8159DBD3C001019E0 /* TheStarFootballClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F65C91C7159DBD3C001019E0 /* TheStarFootballClient.m */; };
+		F68EDAE015A1CB600056D73F /* RKFootballItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F68EDADF15A1CB600056D73F /* RKFootballItem.m */; };
 		F6DE60571599BD1500298586 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE60561599BD1500298586 /* UIKit.framework */; };
 		F6DE60591599BD1500298586 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE60581599BD1500298586 /* Foundation.framework */; };
 		F6DE605B1599BD1500298586 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE605A1599BD1500298586 /* CoreGraphics.framework */; };
@@ -15,22 +20,88 @@
 		F6DE60671599BD1500298586 /* RKEAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DE60661599BD1500298586 /* RKEAppDelegate.m */; };
 		F6DE606A1599BD1500298586 /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6DE60681599BD1500298586 /* MainStoryboard.storyboard */; };
 		F6DE606D1599BD1600298586 /* RKEViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DE606C1599BD1600298586 /* RKEViewController.m */; };
+		F6DE60881599C7A300298586 /* libRestKit.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE607F1599C65500298586 /* libRestKit.a */; };
+		F6DE608F1599D36E00298586 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608B1599D36E00298586 /* CFNetwork.framework */; };
+		F6DE60901599D36E00298586 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608C1599D36E00298586 /* CoreData.framework */; };
+		F6DE60911599D36E00298586 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608D1599D36E00298586 /* MobileCoreServices.framework */; };
+		F6DE60921599D36E00298586 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608E1599D36E00298586 /* SystemConfiguration.framework */; };
+		F6F7C58515A46F5B00DACA64 /* RKBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F7C58415A46F5B00DACA64 /* RKBaseObject.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		F6DE607E1599C65500298586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DE60731599C65400298586 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D1614564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+		F6DE60801599C65500298586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DE60731599C65400298586 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160D2614564E820060A5C5;
+			remoteInfo = RestKitTests;
+		};
+		F6DE60821599C65500298586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DE60731599C65400298586 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E62145651060060A5C5;
+			remoteInfo = RestKitFramework;
+		};
+		F6DE60841599C65500298586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DE60731599C65400298586 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 25160E78145651060060A5C5;
+			remoteInfo = RestKitFrameworkTests;
+		};
+		F6DE60861599C65500298586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DE60731599C65400298586 /* RestKit.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 259C301615128079003066A2;
+			remoteInfo = RestKitResources;
+		};
+		F6DE60891599D0D200298586 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F6DE60731599C65400298586 /* RestKit.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 25160D1514564E810060A5C5;
+			remoteInfo = RestKit;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		F63F293E15A17FEA007E1C8B /* RKFootball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKFootball.h; sourceTree = "<group>"; };
+		F63F293F15A17FEA007E1C8B /* RKFootball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFootball.m; sourceTree = "<group>"; };
+		F65C91C1159D8157001019E0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		F65C91C3159D8193001019E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F65C91C6159DBD3C001019E0 /* TheStarFootballClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheStarFootballClient.h; sourceTree = "<group>"; };
+		F65C91C7159DBD3C001019E0 /* TheStarFootballClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheStarFootballClient.m; sourceTree = "<group>"; };
+		F68EDADE15A1CB600056D73F /* RKFootballItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKFootballItem.h; sourceTree = "<group>"; };
+		F68EDADF15A1CB600056D73F /* RKFootballItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFootballItem.m; sourceTree = "<group>"; };
 		F6DE60521599BD1500298586 /* RestKitExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestKitExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DE60561599BD1500298586 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6DE60581599BD1500298586 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		F6DE605A1599BD1500298586 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		F6DE605E1599BD1500298586 /* RestKitExperiment-Info.plist */ = {isa = PBXFileReference; path = "RestKitExperiment-Info.plist"; sourceTree = "<group>"; };
+		F6DE605E1599BD1500298586 /* RestKitExperiment-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RestKitExperiment-Info.plist"; sourceTree = "<group>"; };
 		F6DE60601599BD1500298586 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F6DE60621599BD1500298586 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F6DE60641599BD1500298586 /* RestKitExperiment-Prefix.pch */ = {isa = PBXFileReference; path = "RestKitExperiment-Prefix.pch"; sourceTree = "<group>"; };
-		F6DE60651599BD1500298586 /* RKEAppDelegate.h */ = {isa = PBXFileReference; path = RKEAppDelegate.h; sourceTree = "<group>"; };
+		F6DE60641599BD1500298586 /* RestKitExperiment-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RestKitExperiment-Prefix.pch"; sourceTree = "<group>"; };
+		F6DE60651599BD1500298586 /* RKEAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKEAppDelegate.h; sourceTree = "<group>"; };
 		F6DE60661599BD1500298586 /* RKEAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKEAppDelegate.m; sourceTree = "<group>"; };
 		F6DE60691599BD1500298586 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
-		F6DE606B1599BD1500298586 /* RKEViewController.h */ = {isa = PBXFileReference; path = RKEViewController.h; sourceTree = "<group>"; };
+		F6DE606B1599BD1500298586 /* RKEViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RKEViewController.h; sourceTree = "<group>"; };
 		F6DE606C1599BD1600298586 /* RKEViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RKEViewController.m; sourceTree = "<group>"; };
+		F6DE60731599C65400298586 /* RestKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RestKit.xcodeproj; path = RestKitSubmodule/RestKit.xcodeproj; sourceTree = "<group>"; };
+		F6DE608B1599D36E00298586 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F6DE608C1599D36E00298586 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F6DE608D1599D36E00298586 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F6DE608E1599D36E00298586 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F6F7C58315A46F5B00DACA64 /* RKBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKBaseObject.h; sourceTree = "<group>"; };
+		F6F7C58415A46F5B00DACA64 /* RKBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKBaseObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +109,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F65C91C4159D8194001019E0 /* QuartzCore.framework in Frameworks */,
+				F65C91C2159D8157001019E0 /* Security.framework in Frameworks */,
+				F6DE608F1599D36E00298586 /* CFNetwork.framework in Frameworks */,
+				F6DE60901599D36E00298586 /* CoreData.framework in Frameworks */,
+				F6DE60911599D36E00298586 /* MobileCoreServices.framework in Frameworks */,
+				F6DE60921599D36E00298586 /* SystemConfiguration.framework in Frameworks */,
+				F6DE60881599C7A300298586 /* libRestKit.a in Frameworks */,
 				F6DE60571599BD1500298586 /* UIKit.framework in Frameworks */,
 				F6DE60591599BD1500298586 /* Foundation.framework in Frameworks */,
 				F6DE605B1599BD1500298586 /* CoreGraphics.framework in Frameworks */,
@@ -47,9 +125,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F65C91C5159DBD2F001019E0 /* Clients */ = {
+			isa = PBXGroup;
+			children = (
+				F6F7C58215A46F3900DACA64 /* Restkit model objects */,
+				F65C91C6159DBD3C001019E0 /* TheStarFootballClient.h */,
+				F65C91C7159DBD3C001019E0 /* TheStarFootballClient.m */,
+			);
+			path = Clients;
+			sourceTree = "<group>";
+		};
 		F6DE60471599BD1500298586 = {
 			isa = PBXGroup;
 			children = (
+				F65C91C3159D8193001019E0 /* QuartzCore.framework */,
+				F65C91C1159D8157001019E0 /* Security.framework */,
+				F6DE608B1599D36E00298586 /* CFNetwork.framework */,
+				F6DE608C1599D36E00298586 /* CoreData.framework */,
+				F6DE608D1599D36E00298586 /* MobileCoreServices.framework */,
+				F6DE608E1599D36E00298586 /* SystemConfiguration.framework */,
+				F6DE60731599C65400298586 /* RestKit.xcodeproj */,
 				F6DE605C1599BD1500298586 /* RestKitExperiment */,
 				F6DE60551599BD1500298586 /* Frameworks */,
 				F6DE60531599BD1500298586 /* Products */,
@@ -77,6 +172,7 @@
 		F6DE605C1599BD1500298586 /* RestKitExperiment */ = {
 			isa = PBXGroup;
 			children = (
+				F65C91C5159DBD2F001019E0 /* Clients */,
 				F6DE60651599BD1500298586 /* RKEAppDelegate.h */,
 				F6DE60661599BD1500298586 /* RKEAppDelegate.m */,
 				F6DE60681599BD1500298586 /* MainStoryboard.storyboard */,
@@ -98,6 +194,31 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		F6DE60741599C65400298586 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F6DE607F1599C65500298586 /* libRestKit.a */,
+				F6DE60811599C65500298586 /* RestKitTests.octest */,
+				F6DE60831599C65500298586 /* RestKit.framework */,
+				F6DE60851599C65500298586 /* RestKitFrameworkTests.octest */,
+				F6DE60871599C65500298586 /* RestKitResources.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F6F7C58215A46F3900DACA64 /* Restkit model objects */ = {
+			isa = PBXGroup;
+			children = (
+				F6F7C58315A46F5B00DACA64 /* RKBaseObject.h */,
+				F6F7C58415A46F5B00DACA64 /* RKBaseObject.m */,
+				F63F293E15A17FEA007E1C8B /* RKFootball.h */,
+				F63F293F15A17FEA007E1C8B /* RKFootball.m */,
+				F68EDADE15A1CB600056D73F /* RKFootballItem.h */,
+				F68EDADF15A1CB600056D73F /* RKFootballItem.m */,
+			);
+			name = "Restkit model objects";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -112,6 +233,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F6DE608A1599D0D200298586 /* PBXTargetDependency */,
 			);
 			name = RestKitExperiment;
 			productName = RestKitExperiment;
@@ -136,12 +258,56 @@
 			mainGroup = F6DE60471599BD1500298586;
 			productRefGroup = F6DE60531599BD1500298586 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = F6DE60741599C65400298586 /* Products */;
+					ProjectRef = F6DE60731599C65400298586 /* RestKit.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				F6DE60511599BD1500298586 /* RestKitExperiment */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		F6DE607F1599C65500298586 /* libRestKit.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libRestKit.a;
+			remoteRef = F6DE607E1599C65500298586 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DE60811599C65500298586 /* RestKitTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitTests.octest;
+			remoteRef = F6DE60801599C65500298586 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DE60831599C65500298586 /* RestKit.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RestKit.framework;
+			remoteRef = F6DE60821599C65500298586 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DE60851599C65500298586 /* RestKitFrameworkTests.octest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitFrameworkTests.octest;
+			remoteRef = F6DE60841599C65500298586 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		F6DE60871599C65500298586 /* RestKitResources.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = RestKitResources.bundle;
+			remoteRef = F6DE60861599C65500298586 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		F6DE60501599BD1500298586 /* Resources */ = {
@@ -163,10 +329,22 @@
 				F6DE60631599BD1500298586 /* main.m in Sources */,
 				F6DE60671599BD1500298586 /* RKEAppDelegate.m in Sources */,
 				F6DE606D1599BD1600298586 /* RKEViewController.m in Sources */,
+				F65C91C8159DBD3C001019E0 /* TheStarFootballClient.m in Sources */,
+				F63F294015A17FEA007E1C8B /* RKFootball.m in Sources */,
+				F68EDAE015A1CB600056D73F /* RKFootballItem.m in Sources */,
+				F6F7C58515A46F5B00DACA64 /* RKBaseObject.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F6DE608A1599D0D200298586 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RestKit;
+			targetProxy = F6DE60891599D0D200298586 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F6DE605F1599BD1500298586 /* InfoPlist.strings */ = {
@@ -238,7 +416,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RestKitExperiment/RestKitExperiment-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/../../Headers";
 				INFOPLIST_FILE = "RestKitExperiment/RestKitExperiment-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -249,7 +432,12 @@
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "RestKitExperiment/RestKitExperiment-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(TARGET_BUILD_DIR)/../../Headers";
 				INFOPLIST_FILE = "RestKitExperiment/RestKitExperiment-Info.plist";
+				OTHER_LDFLAGS = (
+					"-ObjC",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -274,6 +462,7 @@
 				F6DE60721599BD1600298586 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

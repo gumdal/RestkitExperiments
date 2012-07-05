@@ -7,6 +7,7 @@
 //
 
 #import "RKEAppDelegate.h"
+#import <RestKit/RestKit.h>
 
 @implementation RKEAppDelegate
 
@@ -15,6 +16,9 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     // Override point for customization after application launch.
+    RKClient* client = [RKClient clientWithBaseURL:[NSURL URLWithString:@"http://restkit.org"]];  
+    
+    
     return YES;
 }
 							
