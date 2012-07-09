@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="872" systemVersion="10K549" minimumToolsVersion="Automatic" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="RKBaseObject" representedClassName="RKBaseObject" syncable="YES"/>
+    <entity name="RKFootball" representedClassName="RKFootball" parentEntity="RKBaseObject" syncable="YES">
+        <attribute name="lastBuildDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="itemArray" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RKFootballItem" syncable="YES"/>
+    </entity>
+    <entity name="RKFootballItem" representedClassName="RKFootballItem" parentEntity="RKBaseObject" syncable="YES">
+        <attribute name="commentsURL" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="publicationDate" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="storyDescription" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="title" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Root" representedClassName="NSManagedObject" syncable="YES">
+        <relationship name="channelKeyPath" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="RKFootball" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="RKBaseObject" positionX="160" positionY="192" width="128" height="45"/>
+        <element name="RKFootball" positionX="160" positionY="192" width="128" height="90"/>
+        <element name="RKFootballItem" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="Root" positionX="-875" positionY="108" width="128" height="60"/>
+    </elements>
+</model>

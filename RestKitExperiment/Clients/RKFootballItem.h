@@ -2,26 +2,21 @@
 //  RKFootballItem.h
 //  RestKitExperiment
 //
-//  Created by Raj Pawan Gumdal on 7/2/12.
+//  Created by Raj Pawan Gumdal on 7/5/12.
 //  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreData/CoreData.h>
 #import "RKBaseObject.h"
 
-@interface RKFootballItem : RKBaseObject
-{
-    NSString *title_;
-    NSString *link_;
-    NSString *commentsURL_;
-    NSString *storyDescription_;
-    NSDate *publicationDate_;
-}
-@property (nonatomic, copy) NSString *title;
-@property (nonatomic, copy) NSString *link;
-@property (nonatomic, copy) NSString *commentsURL;
-@property (nonatomic, copy) NSString *storyDescription;
-@property (nonatomic, retain) NSDate *publicationDate;
 
+@interface RKFootballItem : RKBaseObject
+
+@property (nonatomic, retain) NSDate * commentsURL;
+@property (nonatomic, retain) NSString * link;
+@property (nonatomic, retain) NSDate *publicationDate;
+@property (nonatomic, retain) NSString *storyDescription;
+@property (nonatomic, retain) NSString * title;
 
 @end

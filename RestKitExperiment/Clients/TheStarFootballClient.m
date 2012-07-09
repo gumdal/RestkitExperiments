@@ -81,19 +81,26 @@
 {
 #if USE_LIVE_URL
     RKObjectManager *newManager = [RKObjectManager managerWithBaseURLString:@"http://football.thestar.com.my/category/news/"];
+    // Setting up coredata for Restkit:
+    RKManagedObjectStore* objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:@"Football.sqlite"];
+    newManager.objectStore = objectStore;
     [RKObjectManager setSharedManager:newManager];
     
     // The root "rss" node mapping
-    RKObjectMapping *rootMapping = [RKObjectMapping mappingForClass:[NSMutableDictionary class]];
+//    RKManagedObjectMapping *rootMapping = [RKManagedObjectMapping mappingForClass:[NSManagedObject class]
+//                                                              inManagedObjectStore:[[RKObjectManager sharedManager] objectStore]];
+    RKManagedObjectMapping *rootMapping = [RKManagedObjectMapping mappingForEntityWithName:@"Root"
+                                                                      inManagedObjectStore:[[RKObjectManager sharedManager] objectStore]];
+    
     [[RKObjectManager sharedManager].mappingProvider setMapping:rootMapping forKeyPath:@"rss"];     // This sets the root node for mapping
     
-    RKObjectMapping *footballMapping = [RKFootball objectMap];
+    RKManagedObjectMapping *footballMapping = [RKFootball objectMapForObjectStore:[[RKObjectManager sharedManager] objectStore]];
     [rootMapping mapKeyPath:@"channel"
-             toRelationship:@"ChannelKeyPath"
+             toRelationship:@"channelKeyPath"
                 withMapping:footballMapping];
     
-    RKObjectMapping *storyMapping = [RKFootballItem objectMap];
-    [footballMapping mapKeyPath:@"item" 
+    RKManagedObjectMapping *storyMapping = [RKFootballItem objectMapForObjectStore:[[RKObjectManager sharedManager] objectStore]];
+    [footballMapping mapKeyPath:@"item"
                 toRelationship:@"itemArray"
                    withMapping:storyMapping];
 #else
@@ -127,9 +134,9 @@
 - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects
 {
     RKLogInfo(@"Load collection of Articles: %@", objects);
-    for (NSDictionary *dict in objects)
+    for (NSManagedObject *dict in objects)
     {
-        RKFootball *ob = [dict valueForKey:@"ChannelKeyPath"];
+        RKFootball *ob = [dict valueForKey:@"channelKeyPath"];
         NSLog(@"The title = %@", [ob title]);
         for (RKFootballItem *footballItem in [ob itemArray])
         {

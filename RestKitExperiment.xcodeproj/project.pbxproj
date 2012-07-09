@@ -7,11 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F63F294015A17FEA007E1C8B /* RKFootball.m in Sources */ = {isa = PBXBuildFile; fileRef = F63F293F15A17FEA007E1C8B /* RKFootball.m */; };
 		F65C91C2159D8157001019E0 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65C91C1159D8157001019E0 /* Security.framework */; };
 		F65C91C4159D8194001019E0 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F65C91C3159D8193001019E0 /* QuartzCore.framework */; };
 		F65C91C8159DBD3C001019E0 /* TheStarFootballClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F65C91C7159DBD3C001019E0 /* TheStarFootballClient.m */; };
-		F68EDAE015A1CB600056D73F /* RKFootballItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F68EDADF15A1CB600056D73F /* RKFootballItem.m */; };
+		F6D855CF15A5C86500369DF1 /* FootballModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F6D855CD15A5C86500369DF1 /* FootballModel.xcdatamodeld */; };
+		F6D855EC15A5CA2700369DF1 /* RKFootballItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D855EB15A5CA2700369DF1 /* RKFootballItem.m */; };
+		F6D855EF15A5CA2700369DF1 /* RKBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D855EE15A5CA2700369DF1 /* RKBaseObject.m */; };
+		F6D855F215A5CA2700369DF1 /* RKFootball.m in Sources */ = {isa = PBXBuildFile; fileRef = F6D855F115A5CA2700369DF1 /* RKFootball.m */; };
+		F6DB6E2615A6DA510003D992 /* RKFootballRoot.m in Sources */ = {isa = PBXBuildFile; fileRef = F6DB6E2515A6DA510003D992 /* RKFootballRoot.m */; };
 		F6DE60571599BD1500298586 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE60561599BD1500298586 /* UIKit.framework */; };
 		F6DE60591599BD1500298586 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE60581599BD1500298586 /* Foundation.framework */; };
 		F6DE605B1599BD1500298586 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE605A1599BD1500298586 /* CoreGraphics.framework */; };
@@ -25,7 +28,6 @@
 		F6DE60901599D36E00298586 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608C1599D36E00298586 /* CoreData.framework */; };
 		F6DE60911599D36E00298586 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608D1599D36E00298586 /* MobileCoreServices.framework */; };
 		F6DE60921599D36E00298586 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608E1599D36E00298586 /* SystemConfiguration.framework */; };
-		F6F7C58515A46F5B00DACA64 /* RKBaseObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F7C58415A46F5B00DACA64 /* RKBaseObject.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -74,14 +76,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F63F293E15A17FEA007E1C8B /* RKFootball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKFootball.h; sourceTree = "<group>"; };
-		F63F293F15A17FEA007E1C8B /* RKFootball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFootball.m; sourceTree = "<group>"; };
 		F65C91C1159D8157001019E0 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		F65C91C3159D8193001019E0 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		F65C91C6159DBD3C001019E0 /* TheStarFootballClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TheStarFootballClient.h; sourceTree = "<group>"; };
 		F65C91C7159DBD3C001019E0 /* TheStarFootballClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TheStarFootballClient.m; sourceTree = "<group>"; };
-		F68EDADE15A1CB600056D73F /* RKFootballItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKFootballItem.h; sourceTree = "<group>"; };
-		F68EDADF15A1CB600056D73F /* RKFootballItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFootballItem.m; sourceTree = "<group>"; };
+		F6D855CE15A5C86500369DF1 /* FootballModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FootballModel.xcdatamodel; sourceTree = "<group>"; };
+		F6D855EA15A5CA2700369DF1 /* RKFootballItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKFootballItem.h; sourceTree = "<group>"; };
+		F6D855EB15A5CA2700369DF1 /* RKFootballItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFootballItem.m; sourceTree = "<group>"; };
+		F6D855ED15A5CA2700369DF1 /* RKBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKBaseObject.h; sourceTree = "<group>"; };
+		F6D855EE15A5CA2700369DF1 /* RKBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKBaseObject.m; sourceTree = "<group>"; };
+		F6D855F015A5CA2700369DF1 /* RKFootball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKFootball.h; sourceTree = "<group>"; };
+		F6D855F115A5CA2700369DF1 /* RKFootball.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFootball.m; sourceTree = "<group>"; };
+		F6DB6E2415A6DA510003D992 /* RKFootballRoot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKFootballRoot.h; sourceTree = "<group>"; };
+		F6DB6E2515A6DA510003D992 /* RKFootballRoot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKFootballRoot.m; sourceTree = "<group>"; };
 		F6DE60521599BD1500298586 /* RestKitExperiment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RestKitExperiment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6DE60561599BD1500298586 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		F6DE60581599BD1500298586 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -100,8 +107,6 @@
 		F6DE608C1599D36E00298586 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F6DE608D1599D36E00298586 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F6DE608E1599D36E00298586 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		F6F7C58315A46F5B00DACA64 /* RKBaseObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKBaseObject.h; sourceTree = "<group>"; };
-		F6F7C58415A46F5B00DACA64 /* RKBaseObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKBaseObject.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +136,17 @@
 				F6F7C58215A46F3900DACA64 /* Restkit model objects */,
 				F65C91C6159DBD3C001019E0 /* TheStarFootballClient.h */,
 				F65C91C7159DBD3C001019E0 /* TheStarFootballClient.m */,
+				F6D855CC15A5C3D900369DF1 /* Resources */,
 			);
 			path = Clients;
+			sourceTree = "<group>";
+		};
+		F6D855CC15A5C3D900369DF1 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F6D855CD15A5C86500369DF1 /* FootballModel.xcdatamodeld */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		F6DE60471599BD1500298586 = {
@@ -209,12 +223,14 @@
 		F6F7C58215A46F3900DACA64 /* Restkit model objects */ = {
 			isa = PBXGroup;
 			children = (
-				F6F7C58315A46F5B00DACA64 /* RKBaseObject.h */,
-				F6F7C58415A46F5B00DACA64 /* RKBaseObject.m */,
-				F63F293E15A17FEA007E1C8B /* RKFootball.h */,
-				F63F293F15A17FEA007E1C8B /* RKFootball.m */,
-				F68EDADE15A1CB600056D73F /* RKFootballItem.h */,
-				F68EDADF15A1CB600056D73F /* RKFootballItem.m */,
+				F6D855ED15A5CA2700369DF1 /* RKBaseObject.h */,
+				F6D855EE15A5CA2700369DF1 /* RKBaseObject.m */,
+				F6DB6E2415A6DA510003D992 /* RKFootballRoot.h */,
+				F6DB6E2515A6DA510003D992 /* RKFootballRoot.m */,
+				F6D855F015A5CA2700369DF1 /* RKFootball.h */,
+				F6D855F115A5CA2700369DF1 /* RKFootball.m */,
+				F6D855EA15A5CA2700369DF1 /* RKFootballItem.h */,
+				F6D855EB15A5CA2700369DF1 /* RKFootballItem.m */,
 			);
 			name = "Restkit model objects";
 			sourceTree = "<group>";
@@ -330,9 +346,11 @@
 				F6DE60671599BD1500298586 /* RKEAppDelegate.m in Sources */,
 				F6DE606D1599BD1600298586 /* RKEViewController.m in Sources */,
 				F65C91C8159DBD3C001019E0 /* TheStarFootballClient.m in Sources */,
-				F63F294015A17FEA007E1C8B /* RKFootball.m in Sources */,
-				F68EDAE015A1CB600056D73F /* RKFootballItem.m in Sources */,
-				F6F7C58515A46F5B00DACA64 /* RKBaseObject.m in Sources */,
+				F6D855CF15A5C86500369DF1 /* FootballModel.xcdatamodeld in Sources */,
+				F6D855EC15A5CA2700369DF1 /* RKFootballItem.m in Sources */,
+				F6D855EF15A5CA2700369DF1 /* RKBaseObject.m in Sources */,
+				F6D855F215A5CA2700369DF1 /* RKFootball.m in Sources */,
+				F6DB6E2615A6DA510003D992 /* RKFootballRoot.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,6 +441,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -439,6 +458,7 @@
 					"-all_load",
 				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -465,6 +485,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F6D855CD15A5C86500369DF1 /* FootballModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F6D855CE15A5C86500369DF1 /* FootballModel.xcdatamodel */,
+			);
+			currentVersion = F6D855CE15A5C86500369DF1 /* FootballModel.xcdatamodel */;
+			path = FootballModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F6DE60491599BD1500298586 /* Project object */;
 }
