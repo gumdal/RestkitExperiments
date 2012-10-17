@@ -80,12 +80,6 @@
 -(void)sendRequestWithResponseDelegate:(id)inDelegate
 {
 #if USE_LIVE_URL
-    RKObjectManager *newManager = [RKObjectManager managerWithBaseURLString:@"http://football.thestar.com.my/category/news/"];
-    // Setting up coredata for Restkit:
-    RKManagedObjectStore* objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:@"Football.sqlite"];
-    newManager.objectStore = objectStore;
-    [RKObjectManager setSharedManager:newManager];
-    
     // The root "rss" node mapping
 //    RKManagedObjectMapping *rootMapping = [RKManagedObjectMapping mappingForClass:[NSManagedObject class]
 //                                                              inManagedObjectStore:[[RKObjectManager sharedManager] objectStore]];
@@ -118,6 +112,9 @@
     [[RKObjectManager sharedManager].mappingProvider setMapping:storyMapping forKeyPath:@"channel"];
 #endif
     
+    // First we shall try to fetch the cached stuff, if any!
+    
+    
     // Now lets load the stories
     [self loadStories];
 }
@@ -133,6 +130,7 @@
 
 - (void)objectLoader:(RKObjectLoader*)objectLoader didLoadObjects:(NSArray*)objects
 {
+    NSLog(@"Fetching completed!");
     RKLogInfo(@"Load collection of Articles: %@", objects);
     for (NSManagedObject *dict in objects)
     {
@@ -150,11 +148,17 @@
     NSLog(@"Error = %@", error);
 }
 
-// -(void)cancelPendingRequestsWithDelegate:(id)inDelegate
-//{
-//    
-//}
-// 
+ -(void)cancelPendingRequestsWithDelegate:(id)inDelegate
+{
+    
+}
+
+- (void)objectLoader:(RKObjectLoader*)loader willMapData:(inout id *)mappableData
+{
+    // This is one place where we can change / update the data which is being mapped
+//    NSLog(@"Mappable Data = %@", *mappableData);
+}
+
 // - (void)request:(RKRequest*)request didLoadResponse:(RKResponse*)response
 //{
 //    

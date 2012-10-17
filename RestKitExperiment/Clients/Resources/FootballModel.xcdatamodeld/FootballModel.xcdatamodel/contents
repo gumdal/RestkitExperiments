@@ -7,7 +7,8 @@
         <relationship name="itemArray" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="RKFootballItem" syncable="YES"/>
     </entity>
     <entity name="RKFootballItem" representedClassName="RKFootballItem" parentEntity="RKBaseObject" syncable="YES">
-        <attribute name="commentsURL" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="commentsURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="itemContent" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="link" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="publicationDate" optional="YES" attributeType="Date" syncable="YES"/>
         <attribute name="storyDescription" optional="YES" attributeType="String" syncable="YES"/>
@@ -19,7 +20,7 @@
     <elements>
         <element name="RKBaseObject" positionX="160" positionY="192" width="128" height="45"/>
         <element name="RKFootball" positionX="160" positionY="192" width="128" height="90"/>
-        <element name="RKFootballItem" positionX="160" positionY="192" width="128" height="120"/>
+        <element name="RKFootballItem" positionX="160" positionY="192" width="128" height="135"/>
         <element name="Root" positionX="-875" positionY="108" width="128" height="60"/>
     </elements>
 </model>

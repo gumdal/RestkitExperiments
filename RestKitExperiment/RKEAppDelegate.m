@@ -18,6 +18,7 @@
     // Override point for customization after application launch.
     RKClient* client = [RKClient clientWithBaseURL:[NSURL URLWithString:@"http://restkit.org"]];  
     
+    [self setupRestkit];
     
     return YES;
 }
@@ -59,6 +60,15 @@
      Save data if appropriate.
      See also applicationDidEnterBackground:.
      */
+}
+
+-(void)setupRestkit
+{
+    RKObjectManager *newManager = [RKObjectManager managerWithBaseURLString:@"http://football.thestar.com.my/category/news/"];
+    // Setting up coredata for Restkit:
+    RKManagedObjectStore* objectStore = [RKManagedObjectStore objectStoreWithStoreFilename:@"Football.sqlite"];
+    newManager.objectStore = objectStore;
+    [RKObjectManager setSharedManager:newManager];
 }
 
 @end

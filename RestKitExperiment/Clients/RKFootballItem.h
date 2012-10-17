@@ -13,10 +13,11 @@
 
 @interface RKFootballItem : RKBaseObject
 
-@property (nonatomic, retain) NSDate * commentsURL;
+@property (nonatomic, retain) NSString * commentsURL;
 @property (nonatomic, retain) NSString * link;
 @property (nonatomic, retain) NSDate *publicationDate;
 @property (nonatomic, retain) NSString *storyDescription;
 @property (nonatomic, retain) NSString * title;
+@property (nonatomic, retain) NSString * itemContent;
 
 @end

@@ -28,6 +28,8 @@
 		F6DE60901599D36E00298586 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608C1599D36E00298586 /* CoreData.framework */; };
 		F6DE60911599D36E00298586 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608D1599D36E00298586 /* MobileCoreServices.framework */; };
 		F6DE60921599D36E00298586 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F6DE608E1599D36E00298586 /* SystemConfiguration.framework */; };
+		F6F4644715ADAB1000E08D97 /* RKContentTypeFinder.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F4644415ADAB1000E08D97 /* RKContentTypeFinder.m */; };
+		F6F4644815ADAB1000E08D97 /* RKHTMLContentSegregator.m in Sources */ = {isa = PBXBuildFile; fileRef = F6F4644615ADAB1000E08D97 /* RKHTMLContentSegregator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,10 @@
 		F6DE608C1599D36E00298586 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F6DE608D1599D36E00298586 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		F6DE608E1599D36E00298586 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F6F4644315ADAB1000E08D97 /* RKContentTypeFinder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKContentTypeFinder.h; sourceTree = "<group>"; };
+		F6F4644415ADAB1000E08D97 /* RKContentTypeFinder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKContentTypeFinder.m; sourceTree = "<group>"; };
+		F6F4644515ADAB1000E08D97 /* RKHTMLContentSegregator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RKHTMLContentSegregator.h; sourceTree = "<group>"; };
+		F6F4644615ADAB1000E08D97 /* RKHTMLContentSegregator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RKHTMLContentSegregator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +192,7 @@
 		F6DE605C1599BD1500298586 /* RestKitExperiment */ = {
 			isa = PBXGroup;
 			children = (
+				F6F4644215ADAB1000E08D97 /* Utilities */,
 				F65C91C5159DBD2F001019E0 /* Clients */,
 				F6DE60651599BD1500298586 /* RKEAppDelegate.h */,
 				F6DE60661599BD1500298586 /* RKEAppDelegate.m */,
@@ -218,6 +225,17 @@
 				F6DE60871599C65500298586 /* RestKitResources.bundle */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F6F4644215ADAB1000E08D97 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F6F4644315ADAB1000E08D97 /* RKContentTypeFinder.h */,
+				F6F4644415ADAB1000E08D97 /* RKContentTypeFinder.m */,
+				F6F4644515ADAB1000E08D97 /* RKHTMLContentSegregator.h */,
+				F6F4644615ADAB1000E08D97 /* RKHTMLContentSegregator.m */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		F6F7C58215A46F3900DACA64 /* Restkit model objects */ = {
@@ -351,6 +369,8 @@
 				F6D855EF15A5CA2700369DF1 /* RKBaseObject.m in Sources */,
 				F6D855F215A5CA2700369DF1 /* RKFootball.m in Sources */,
 				F6DB6E2615A6DA510003D992 /* RKFootballRoot.m in Sources */,
+				F6F4644715ADAB1000E08D97 /* RKContentTypeFinder.m in Sources */,
+				F6F4644815ADAB1000E08D97 /* RKHTMLContentSegregator.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
