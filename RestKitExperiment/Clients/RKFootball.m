@@ -15,6 +15,7 @@
 @dynamic title;
 @dynamic itemArray;
 @dynamic lastBuildDate;
+@dynamic guid;
 
 - (void)dealloc
 {
@@ -29,7 +30,7 @@
                                                                  inManagedObjectStore:inManagedObjectStore];
     [footballMapping mapKeyPath:@"title" toAttribute:@"title"];
     [footballMapping mapKeyPath:@"lastBuildDate" toAttribute:@"lastBuildDate"];
-    [footballMapping setPrimaryKeyAttribute:@"lastBuildDate"]; // http://restkit.org/api/master/Classes/RKManagedObjectMapping.html#//api/name/primaryKeyAttribute
+    [footballMapping setPrimaryKeyAttribute:@"guid"]; // http://restkit.org/api/master/Classes/RKManagedObjectMapping.html#//api/name/primaryKeyAttribute
     return footballMapping;
 }
 

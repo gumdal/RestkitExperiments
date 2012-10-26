@@ -17,6 +17,7 @@
 @property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSSet *itemArray;
 @property (nonatomic, retain) NSDate *lastBuildDate;
+@property (nonatomic, retain) NSString *guid;
 @end
 
 @interface RKFootball (CoreDataGeneratedAccessors)
